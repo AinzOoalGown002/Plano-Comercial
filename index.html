@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shorcut icon" href="Img/Favicon.png" type="image.png">
+    <title>AetherSync | Inteligência de Dados</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Aether<span>Sync</span></div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#services">Serviços</a>
+            <a href="#pricing">Planos</a>
+            <a href="#contact" class="btn-cta">Consultoria Grátis</a>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Sincronize sua empresa com o <span>Futuro da I.A.</span></h1>
+            <p>Transformamos dados brutos em decisões estratégicas com infraestrutura de ponta e algoritmos preditivos.</p>
+        </div>
+    </header>
+
+    <section id="services" class="services">
+        <h2 class="section-title">Nossas Especialidades</h2>
+        <div class="services-grid">
+            <div class="s-card">
+                <div class="icon">📊</div>
+                <h3>Análise Preditiva</h3>
+                <p>Antecipe tendências de mercado com precisão de 95% usando nossos modelos de Machine Learning.</p>
+            </div>
+            <div class="s-card">
+                <div class="icon">🤖</div>
+                <h3>Automação com I.A.</h3>
+                <p>Reduza custos operacionais integrando agentes inteligentes nos seus processos internos.</p>
+            </div>
+            <div class="s-card">
+                <div class="icon">🌐</div>
+                <h3>Arquitetura Cloud</h3>
+                <p>Sistemas escaláveis em nuvem projetados para suportar grandes volumes de dados (Big Data).</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <h2 class="section-title">Planos Comerciais</h2>
+        <div class="price-grid">
+            <div class="p-card">
+                <h3>Startup</h3>
+                <div class="price">R$ 1.200<span>/mês</span></div>
+                <ul>
+                    <li>Dashboards Básicos</li>
+                    <li>Suporte via E-mail</li>
+                    <li>Até 10k requisições/mês</li>
+                </ul>
+                <button>Assinar Agora</button>
+            </div>
+            <div class="p-card featured">
+                <div class="badge">Mais Popular</div>
+                <h3>Business</h3>
+                <div class="price">R$ 3.500<span>/mês</span></div>
+                <ul>
+                    <li>I.A. Preditiva Customizada</li>
+                    <li>Suporte 24/7 Priority</li>
+                    <li>Requisições Ilimitadas</li>
+                    <li>Relatórios Semanais</li>
+                </ul>
+                <button>Falar com Consultor</button>
+            </div>
+            <div class="p-card">
+                <h3>Enterprise</h3>
+                <div class="price">Sob Consulta</div>
+                <ul>
+                    <li>Infraestrutura On-premise</li>
+                    <li>Desenvolvimento de Modelos</li>
+                    <li>SLA de 99.9%</li>
+                </ul>
+                <button>Entrar em Contato</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="JS/script.js"></script>
+
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2>Pronto para escalar?</h2>
+            <form id="whatsappForm">
+                <input type="text" id="nome" placeholder="Seu Nome" required>
+                <input type="email" id="email" placeholder="Seu E-mail" required>
+                <textarea id="mensagem" placeholder="Fale sobre o seu projeto"></textarea>
+                <button type="button" onclick="enviarWhatsApp()" class="btn-submit">Enviar Proposta</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 AetherSync Solutions. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

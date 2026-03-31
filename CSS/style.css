@@ -1,0 +1,50 @@
+:root {
+    --cyan: #00bfff;
+    --dark: #0e1014;
+    --glass: rgba(22, 26, 32, 0.7);
+    --border: rgba(0, 191, 255, 0.2);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+body { background: var(--dark); color: #fff; font-family: 'Inter', sans-serif; }
+
+.navbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px 10%; background: rgba(14, 16, 20, 0.9);
+    position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 1px solid var(--border);
+}
+
+.logo { font-family: 'JetBrains Mono'; font-size: 1.5rem; font-weight: 800; }
+.logo span { color: var(--cyan); }
+.nav-links a { color: #ccc; text-decoration: none; margin-left: 30px; transition: 0.3s; }
+.nav-links a:hover { color: var(--cyan); }
+
+.hero {
+    height: 100vh; display: flex; align-items: center; justify-content: center;
+    text-align: center; background: radial-gradient(circle at center, rgba(0,191,255,0.1), transparent);
+}
+.hero h1 { font-size: 3.5rem; margin-bottom: 20px; }
+.hero h1 span { color: var(--cyan); text-shadow: 0 0 20px rgba(0,191,255,0.5); }
+.hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px; opacity: 0.8; }
+
+.services, .pricing { padding: 100px 10%; }
+.section-title { text-align: center; margin-bottom: 50px; font-size: 2.5rem; color: var(--cyan); }
+.services-grid, .price-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+
+.s-card, .p-card {
+    background: var(--glass); border: 1px solid var(--border);
+    padding: 40px; border-radius: 20px; transition: 0.3s; text-align: center;
+}
+.s-card:hover, .p-card:hover { border-color: var(--cyan); transform: translateY(-10px); }
+
+.p-card.featured { border: 2px solid var(--cyan); position: relative; }
+.badge { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--cyan); color: var(--dark); padding: 5px 15px; border-radius: 20px; font-weight: bold; }
+.price { font-size: 2.5rem; font-weight: 800; margin: 20px 0; }
+.price span { font-size: 1rem; opacity: 0.6; }
+.p-card button { width: 100%; padding: 15px; background: var(--cyan); border: none; border-radius: 10px; font-weight: bold; cursor: pointer; margin-top: 20px; }
+
+.contact { padding: 100px 10%; background: rgba(0, 191, 255, 0.03); }
+.contact-container { max-width: 600px; margin: 0 auto; text-align: center; }
+form { display: flex; flex-direction: column; gap: 15px; margin-top: 30px; }
+input, textarea { background: var(--glass); border: 1px solid var(--border); padding: 15px; border-radius: 10px; color: #fff; }
+.btn-submit { background: var(--cyan); padding: 15px; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; }
